@@ -3,14 +3,14 @@
 # Johnny, the total of your purchase is $1,688.70
 
 def calcTotal(amt,tax,name):
-    mytotal = amt * (1+tax)
-    print(f"{myname}, the total of your purchase is ${mytotal:,.2f}")
+    mytotal = amt * (1 + tax)
+    print(f"{name}, the total of your purchase is ${mytotal:,.2f}")
 
 myname = 'Johnny'
-price = 1,560
+price = 1560
 thetax = 0.0825
 
-calcTotal(thetax,price,myname)
+calcTotal(price, thetax, myname)
 
 
 
@@ -21,7 +21,8 @@ calcTotal(thetax,price,myname)
 list1 = [1,'two',3.2,'four',5]
 
 for i in list1:
-    print(i)
+    if type(i) == int:
+        print(i)
 
 
 
